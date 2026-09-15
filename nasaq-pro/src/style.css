@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  direction: rtl;
+  font-family: Arial, sans-serif;
+  background: #f3f6fb;
+  color: #172033;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+.loading {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.login {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #071b3a, #124b91);
+}
+
+.box {
+  width: min(430px, 100%);
+  padding: 35px;
+  background: white;
+  border-radius: 22px;
+  box-shadow: 0 20px 60px #0004;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  margin: auto;
+  display: grid;
+  place-items: center;
+  border-radius: 20px;
+  background: #0b3d91;
+  color: white;
+  font-size: 38px;
+  font-weight: bold;
+}
+
+h1 {
+  text-align: center;
+}
+
+.box > p {
+  text-align: center;
+  color: #687386;
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin: 15px 0 7px;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #d5dce8;
+  border-radius: 12px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 18px;
+  border: 0;
+  border-radius: 12px;
+  background: #0b3d91;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.error {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 10px;
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.app {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.app header {
+  background: #071b3a;
+  color: white;
+  padding: 22px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app header h1,
+.app header p {
+  text-align: right;
+}
+
+.app header button {
+  width: auto;
+  background: #b91c1c;
+}
+
+.welcome {
+  background: white;
+  margin: 20px 0;
+  padding: 25px;
+  border-radius: 18px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 16px;
+}
+
+.grid > div {
+  background: white;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 5px 20px #0000000d;
+  font-size: 30px;
+}
+
+.grid h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.grid p {
+  font-size: 14px;
+  color: #687386;
+}
+
+@media (max-width: 600px) {
+  .app header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .app header button {
+    width: 100%;
+  }
+}
